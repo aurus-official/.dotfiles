@@ -1,6 +1,0 @@
-.zshrc
-.zsh_history
-.tmux.conf
-.config/nvim/
-.config/picom/
-.config/i3/
