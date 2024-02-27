@@ -205,11 +205,11 @@ bindsym $mod+Shift+t exec --no-startup-id maim --select | xclip -selection clipb
 
 # Execute on start
 exec --no-startup-id nitrogen --restore
-exec urxvt
 exec firefox-developer-edition
 exec firefox 
 exec_always redshift -P -O 5000
 exec_always unclutter --keystroke --timeout 3
+exec zsh ~/.dotfiles/tools/urxvt.sh
 #$exec zsh ~/Scripts/trans.sh
 
 # class                 border  backgr. text    indicator child_border
