@@ -35,7 +35,7 @@ return {
 		})
 
 		-- configure typescript server with plugin
-		lspconfig["tsserver"].setup({
+		lspconfig["ts_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
@@ -134,5 +134,8 @@ return {
 
 		-- configure gopls server
 		lspconfig["gopls"].setup({})
+
+		-- configure clangd server
+		lspconfig["clangd"].setup({})
 	end,
 }

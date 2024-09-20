@@ -1,5 +1,5 @@
 return {
-	"nvim-telescope/telescope.nvim",
-	tag = "0.1.5",
+	"folke/todo-comments.nvim",
 	dependencies = { "nvim-lua/plenary.nvim" },
+	opts = {},
 }

@@ -1,40 +1,35 @@
-local set = vim.opt
+local set_options = vim.opt
+local set_defaults = vim.g
 
-set.guicursor = ""
-set.updatetime = 50
+set_options.guicursor = ""
+set_options.updatetime = 50
+set_options.expandtab = true
+set_options.smarttab = true
+set_options.shiftwidth = 4
+set_options.tabstop = 4
+set_options.softtabstop = 4
+set_options.smartindent = true
+set_options.hlsearch = false
+set_options.incsearch = true
+set_options.ignorecase = true
+set_options.smartcase = true
+set_options.splitbelow = true
+set_options.splitright = true
+set_options.wrap = false
+set_options.scrolloff = 8
+set_options.fileencoding = "utf-8"
+set_options.termguicolors = true
+set_options.signcolumn = "yes"
+set_options.isfname:append("@-@")
+set_options.relativenumber = true
+set_options.cursorline = true
+set_options.hidden = true
+set_options.number = true
+set_options.swapfile = false
+set_options.backup = false
+set_options.undodir = os.getenv("HOME") .. "/.vim/undodir"
+set_options.undofile = true
 
-set.expandtab = true
-set.smarttab = true
-set.shiftwidth = 4
-set.tabstop = 4
-set.softtabstop = 4
-set.smartindent = true
-
-set.hlsearch = false
-set.incsearch = true
-set.ignorecase = true
-set.smartcase = true
-
-set.splitbelow = true
-set.splitright = true
-set.wrap = false
-set.scrolloff = 8
-set.fileencoding = "utf-8"
-set.termguicolors = true
-set.signcolumn = "yes"
-set.isfname:append("@-@")
-
-set.relativenumber = true
-set.cursorline = true
-
-set.hidden = true
-set.number = true
-
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
-
-vim.g.netrw_browse_split = 0
-vim.g.netrw_banner = 0
-vim.g.netwr_winsize = 25
+set_defaults.netrw_browse_split = 0
+set_defaults.netrw_banner = 0
+set_defaults.netwr_winsize = 25
