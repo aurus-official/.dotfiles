@@ -183,16 +183,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 bindsym $mod+m exec rofi -show drun
 
-# Automatic open your initial apps and assignment to workspace
-#assign [class="Godot_Engine"] 3
-#for_window [class="Godot_Engine"] floating enable
+# Assign Certain Windows
 assign [class="urxvt"] 1
-assign [class="firefoxdeveloperedition"] 2
+assign [class="firefox-developer-edition"] 2
 assign [class="firefox"] 3
+assign [class="Godot_Engine"] 4
 
-
-floating_minimum_size 1200 x 700
-floating_maximum_size 1200 x 700
+# Set Default Floating Size
+floating_maximum_size 800 x 500
 for_window [floating] move position center
 
 # Custom Binds
@@ -203,19 +201,10 @@ bindsym $mod+Shift+x exec i3lock --ignore-empty-password --tiling -i ~/Wallpaper
 bindsym $mod+Shift+s exec --no-startup-id maim --select "/home/$USER/Pictures/$(date).jpg" 
 bindsym $mod+Shift+t exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
-# Execute on start
+# Execute On Start
 exec --no-startup-id nitrogen --restore
 exec firefox-developer-edition
-exec firefox 
+# exec firefox 
 exec_always redshift -P -O 5000
 exec_always unclutter --keystroke --timeout 3
 exec zsh ~/.dotfiles/tools/urxvt.sh
-#$exec zsh ~/Scripts/trans.sh
-
-# class                 border  backgr. text    indicator child_border
-client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-client.background       #ffffff

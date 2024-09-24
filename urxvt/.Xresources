@@ -53,10 +53,13 @@ URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
 URxvt*transparent:       true
-URxvt*shading:       15
+URxvt*shading:       30
 
 URxvt.font: xft:MesloLGS NF:style=Regular:size=11
 
 *antialias:  true
 *autohint:   false
 no_warnings: true
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
