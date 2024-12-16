@@ -6,18 +6,19 @@ return {
 		local conform = require("conform")
 		conform.setup({
 			formatters_by_ft = {
-				javascript = { { "prettierd", "prettier" } },
-				typescript = { { "prettierd", "prettier" } },
-				javascriptreact = { { "prettierd", "prettier" } },
-				typescriptreact = { { "prettierd", "prettier" } },
-				css = { { "prettierd", "prettier" } },
-				html = { { "prettierd", "prettier" } },
-				svelte = { { "prettierd", "prettier" } },
-				json = { { "prettierd", "prettier" } },
+				javascript = { "prettierd", "prettier" },
+				typescript = { "prettierd", "prettier" },
+				javascriptreact = { "prettierd", "prettier" },
+				typescriptreact = { "prettierd", "prettier" },
+				css = { "prettierd", "prettier" },
+				html = { "prettierd", "prettier" },
+				svelte = { "prettierd", "prettier" },
+				json = { "prettierd", "prettier" },
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
+				xml = { "xmlformatter" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

@@ -185,9 +185,7 @@ bindsym $mod+m exec rofi -show drun
 
 # Assign Certain Windows
 assign [class="urxvt"] 1
-assign [class="firefox-developer-edition"] 2
-assign [class="firefox"] 3
-assign [class="Godot_Engine"] 4
+assign [class="zen-beta"] 2
 
 # Set Default Floating Size
 floating_maximum_size 800 x 500
@@ -203,8 +201,8 @@ bindsym $mod+Shift+t exec --no-startup-id maim --select | xclip -selection clipb
 
 # Execute On Start
 exec --no-startup-id nitrogen --restore
-exec firefox-developer-edition
-# exec firefox 
+exec zen-browser
+
 exec_always redshift -P -O 5000
 exec_always unclutter --keystroke --timeout 3
 exec zsh ~/.dotfiles/tools/urxvt.sh

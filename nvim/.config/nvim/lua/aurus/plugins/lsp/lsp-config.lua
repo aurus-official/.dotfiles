@@ -137,5 +137,18 @@ return {
 
 		-- configure clangd server
 		lspconfig["clangd"].setup({})
+
+		-- configure dockerls server
+		lspconfig["dockerls"].setup({
+			settings = {
+				docker = {
+					languageserver = {
+						formatter = {
+							ignoreMultilineInstructions = true,
+						},
+					},
+				},
+			},
+		})
 	end,
 }
