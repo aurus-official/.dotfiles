@@ -221,13 +221,20 @@ bar {
 }
 
 # Custom set
-xwayland disable
+xwayland enable
 assign [app_id="foot"]  1
 assign [app_id="zen-beta"]  2
 exec foot
-exec zen-beta
+exec zen-browser
+exec gammastep -O 5000
 font pango:Hack Nerd Font 9
+
 input 9639:64124:Compx_2.4G_Wireless_Receiver {
+    accel_profile "flat"
+    pointer_accel -0.10
+}
+
+input 9639:64123:Compx_2.4G_Dual_Mode_Mouse {
     accel_profile "flat"
     pointer_accel -0.10
 }

@@ -1,8 +1,14 @@
 return {
 	"neovim/nvim-lspconfig",
+	"hrsh7th/cmp-nvim-lsp",
+	{
+		"mfussenegger/nvim-jdtls",
+		dependencies = {
+			"mfussenegger/nvim-dap",
+		},
+	},
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
 	},
 	config = function()
@@ -99,9 +105,6 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
-
-		-- configure java server
-		lspconfig["jdtls"].setup({})
 
 		-- configure lua server (with special settings)
 		lspconfig["lua_ls"].setup({
