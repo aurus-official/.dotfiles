@@ -1,157 +1,94 @@
 return {
 	"neovim/nvim-lspconfig",
-	"hrsh7th/cmp-nvim-lsp",
-	{
-		"mfussenegger/nvim-jdtls",
-		dependencies = {
-			"mfussenegger/nvim-dap",
-		},
-	},
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
-		{ "antosha417/nvim-lsp-file-operations", config = true },
+		"hrsh7th/cmp-nvim-lsp",
+		{
+			"folke/lazydev.nvim",
+			ft = "lua", -- only load on lua files
+			opts = {
+				library = {
+					{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+				},
+			},
+		},
 	},
 	config = function()
-		-- import lspconfig plugin
-		local lspconfig = require("lspconfig")
+		local nvim_lsp = require("lspconfig")
+		local mason_lspconfig = require("mason-lspconfig")
 
-		-- import cmp-nvim-lsp plugin
-		local cmp_nvim_lsp = require("cmp_nvim_lsp")
+		local protocol = require("vim.lsp.protocol")
 
-		local opts = { noremap = true, silent = true }
 		local on_attach = function(client, bufnr)
-			opts.buffer = bufnr
-		end
-
-		-- used to enable autocompletion (assign to every lsp server config)
-		local capabilities = cmp_nvim_lsp.default_capabilities()
-
-		-- Change the Diagnostic symbols in the sign column (gutter)
-		-- (not in youtube nvim video)
-		local signs = { Error = "E", Warn = "W", Hint = "H", Info = "I " }
-		for type, icon in pairs(signs) do
-			local hl = "DiagnosticSign" .. type
-			vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-		end
-
-		-- configure html server
-		lspconfig["html"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- configure typescript server with plugin
-		lspconfig["ts_ls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- configure css server
-		lspconfig["cssls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			settings = {
-				css = { validate = true, lint = {
-					unknownAtRules = "ignore",
-				} },
-				scss = { validate = true, lint = {
-					unknownAtRules = "ignore",
-				} },
-				less = { validate = true, lint = {
-					unknownAtRules = "ignore",
-				} },
-			},
-		})
-
-		-- configure tailwindcss server
-		lspconfig["tailwindcss"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- configure svelte server
-		lspconfig["svelte"].setup({
-			capabilities = capabilities,
-			on_attach = function(client, bufnr)
-				on_attach(client, bufnr)
-
-				vim.api.nvim_create_autocmd("BufWritePost", {
-					pattern = { "*.js", "*.ts" },
-					callback = function(ctx)
-						if client.name == "svelte" then
-							client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.file })
-						end
+			-- format on save
+			if client.server_capabilities.documentFormattingProvider then
+				vim.api.nvim_create_autocmd("BufWritePre", {
+					group = vim.api.nvim_create_augroup("Format", { clear = true }),
+					buffer = bufnr,
+					callback = function()
+						vim.lsp.buf.format()
 					end,
 				})
+			end
+		end
+
+		local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
+		mason_lspconfig.setup_handlers({
+			function(server)
+				nvim_lsp[server].setup({
+					capabilities = capabilities,
+				})
 			end,
-		})
-
-		-- configure graphql language server
-		lspconfig["graphql"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
-		})
-
-		-- configure emmet language server
-		lspconfig["emmet_ls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
-		})
-
-		-- configure python server
-		lspconfig["pyright"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- configure lua server (with special settings)
-		lspconfig["lua_ls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			settings = { -- custom settings for lua
-				Lua = {
-					-- make the language server recognize "vim" global
-					diagnostics = {
-						globals = { "vim" },
-					},
-					workspace = {
-						-- make language server aware of runtime files
-						library = {
-							[vim.fn.expand("$VIMRUNTIME/lua")] = true,
-							[vim.fn.stdpath("config") .. "/lua"] = true,
-						},
-					},
-				},
-			},
-		})
-
-		-- configure python server
-		lspconfig["pyright"].setup({})
-
-		-- configure quick lint js server
-		lspconfig["quick_lint_js"].setup({
-			filetypes = { "javascript" },
-		})
-
-		-- configure gopls server
-		lspconfig["gopls"].setup({})
-
-		-- configure clangd server
-		lspconfig["clangd"].setup({})
-
-		-- configure dockerls server
-		lspconfig["dockerls"].setup({
-			settings = {
-				docker = {
-					languageserver = {
-						formatter = {
-							ignoreMultilineInstructions = true,
-						},
-					},
-				},
-			},
+			["ts_ls"] = function()
+				nvim_lsp["ts_ls"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
+			["cssls"] = function()
+				nvim_lsp["cssls"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
+			["tailwindcss"] = function()
+				nvim_lsp["tailwindcss"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
+			["html"] = function()
+				nvim_lsp["html"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
+			["jsonls"] = function()
+				nvim_lsp["jsonls"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
+			["eslint"] = function()
+				nvim_lsp["eslint"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
+			["pyright"] = function()
+				nvim_lsp["pyright"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
+			["jdtls"] = function() end,
+			["lua_ls"] = function()
+				nvim_lsp["lua_ls"].setup({
+					on_attach = on_attach,
+					capabilities = capabilities,
+				})
+			end,
 		})
 	end,
 }

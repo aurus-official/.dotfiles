@@ -25,9 +25,6 @@ map("n", "<space>ca", ":lua vim.lsp.buf.code_action()<CR>", opts)
 map("n", "gr", ":lua vim.lsp.buf.references()<CR>", opts)
 map("n", "<space>f", ":lua vim.lsp.buf.formatting()<CR>", opts)
 
--- Trouble.nvim Bindings
-map("n", "<leader>at", "<cmd>Trouble diagnostics toggle<CR>", opts)
-
 -- Vim Fugitive
 map("n", "<leader>gs", ":Git<CR>", opts)
 

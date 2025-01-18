@@ -223,10 +223,10 @@ bar {
 # Custom set
 xwayland enable
 assign [app_id="foot"]  1
-assign [app_id="zen-beta"]  2
+assign [app_id="zen"]  2
 exec foot
 exec zen-browser
-exec gammastep -O 5000
+# exec gammastep -O 5000
 font pango:Hack Nerd Font 9
 
 input 9639:64124:Compx_2.4G_Wireless_Receiver {

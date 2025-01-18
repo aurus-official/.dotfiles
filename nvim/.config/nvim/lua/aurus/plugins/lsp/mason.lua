@@ -1,55 +1,36 @@
 return {
-	"williamboman/mason.nvim",
-	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
-	},
-	config = function()
-		-- import mason
-		local mason = require("mason")
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    dependencies = {
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
+    },
+    config = function()
+        require("mason").setup()
 
-		-- import mason-lspconfig
-		local mason_lspconfig = require("mason-lspconfig")
-		local mason_tool_installer = require("mason-tool-installer")
+        require("mason-lspconfig").setup({
+            automatic_installation = true,
+            ensure_installed = {
+                "cssls",
+                "eslint",
+                "html",
+                "jsonls",
+                "ts_ls",
+                "pyright",
+                "tailwindcss",
+                "jdtls",
+                "lua_ls",
+            },
+        })
 
-		-- enable mason and configure icons
-		mason.setup({
-			ui = {
-				icons = {
-					package_installed = "✓",
-					package_pending = "➜",
-					package_uninstalled = "✗",
-				},
-			},
-		})
-
-		mason_lspconfig.setup({
-			-- list of servers for mason to install
-			ensure_installed = {
-				"ts_ls",
-				"html",
-				"cssls",
-				"tailwindcss",
-				"svelte",
-				"lua_ls",
-				"graphql",
-				"emmet_ls",
-				"pyright",
-				"clangd",
-			},
-
-			automatic_installation = false, -- not the same as ensure_installed
-		})
-
-		mason_tool_installer.setup({
-			ensure_installed = {
-				"prettier", -- prettier formatter
-				"stylua", -- lua formatter
-				"isort", -- python formatter
-				"black", -- python formatter
-				"pylint", -- python linter
-				"eslint_d", -- js linter
-			},
-		})
-	end,
+        require("mason-tool-installer").setup({
+            ensure_installed = {
+                "prettier",
+                "stylua", -- lua formatter
+                "isort", -- python formatter
+                "black", -- python formatter
+                "pylint",
+                "eslint_d",
+            },
+        })
+    end,
 }
