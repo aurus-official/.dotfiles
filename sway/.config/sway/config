@@ -226,6 +226,7 @@ assign [app_id="foot"]  1
 assign [app_id="zen"]  2
 exec foot
 exec zen-browser
+exec "~/.dotfiles/tools/ssfsway.sh"
 # exec gammastep -O 5000
 font pango:Hack Nerd Font 9
 
