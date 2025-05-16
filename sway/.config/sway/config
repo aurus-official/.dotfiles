@@ -23,7 +23,7 @@ set $term foot
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # default_border pixel 0
 # default_floating_border pixel 0
-exec swaybg -i $HOME/Wallpaper/defaultwall.png -m fill
+exec swaybg -i $HOME/Wallpaper/sololeveling.png -m fill
 #
 # Example configuration:
 #

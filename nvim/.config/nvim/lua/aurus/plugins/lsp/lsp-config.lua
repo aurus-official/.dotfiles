@@ -89,6 +89,12 @@ return {
                     capabilities = capabilities,
                 })
             end,
+            ["svelte"] = function()
+                nvim_lsp["svelte"].setup({
+                    on_attach = on_attach,
+                    capabilities = capabilities,
+                })
+            end,
         })
     end,
 }
