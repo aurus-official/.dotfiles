@@ -1,22 +1,14 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -82,6 +74,8 @@ plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
 
+
+ZLE_RPROMPT_INDENT=0
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -93,112 +87,27 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-ZLE_RPROMPT_INDENT=0
-typeset -A ZSH_HIGHLIGHT_STYLES
+# alias javawayland="/home/russel/.jdk/build/linux-x86_64-server-release/images/jdk/bin/java"
+# alias javacwayland="/home/russel/.jdk/build/linux-x86_64-server-release/images/jdk/bin/java"
 
 
-ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=120'
-ZSH_HIGHLIGHT_STYLES[builtin]='fg=120'
-
-# Catppuccin Mocha Theme (for zsh-syntax-highlighting)
-#
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
-typeset -gA ZSH_HIGHLIGHT_STYLES
-
-## General
-### Diffs
-### Markup
-## Classes
-## Comments
-ZSH_HIGHLIGHT_STYLES[comment]='fg=#585b70'
-## Constants
-## Entitites
-## Functions/methods
-ZSH_HIGHLIGHT_STYLES[alias]='fg=003'
-ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=003'
-ZSH_HIGHLIGHT_STYLES[global-alias]='fg=003'
-ZSH_HIGHLIGHT_STYLES[function]='fg=003'
-ZSH_HIGHLIGHT_STYLES[command]='fg=003'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=003,italic'
-ZSH_HIGHLIGHT_STYLES[autodirectory]='fg=#fab387,italic'
-ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#fab387'
-ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#fab387'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=#cba6f7'
-## Keywords
-## Built ins
-ZSH_HIGHLIGHT_STYLES[builtin]='fg=120'
-ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=120'
-ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=120'
-## Punctuation
-ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#f38ba8'
-ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-unquoted]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#f38ba8'
-ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=#f38ba8'
-ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=#f38ba8'
-## Serializable / Configuration Languages
-## Storage
-## Strings
-ZSH_HIGHLIGHT_STYLES[command-substitution-quoted]='fg=#f9e2af'
-ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-quoted]='fg=#f9e2af'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#f9e2af'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument-unclosed]='fg=#e64553'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#f9e2af'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument-unclosed]='fg=#e64553'
-ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=#f9e2af'
-## Variables
-ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=#e64553'
-ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[assign]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[named-fd]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[numeric-fd]='fg=#cdd6f4'
-## No category relevant in spec
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#e64553'
-ZSH_HIGHLIGHT_STYLES[path]='fg=#cdd6f4,underline'
-ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=#f38ba8,underline'
-ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#cdd6f4,underline'
-ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#f38ba8,underline'
-ZSH_HIGHLIGHT_STYLES[globbing]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#cba6f7'
-#ZSH_HIGHLIGHT_STYLES[command-substitution]='fg=?'
-#ZSH_HIGHLIGHT_STYLES[command-substitution-unquoted]='fg=?'
-#ZSH_HIGHLIGHT_STYLES[process-substitution]='fg=?'
-#ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=?'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument-unclosed]='fg=#e64553'
-ZSH_HIGHLIGHT_STYLES[redirection]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[default]='fg=#cdd6f4'
-ZSH_HIGHLIGHT_STYLES[cursor]='fg=#cdd6f4'
-
-ZSH_TMUX_AUTOSTART=true
-
-
-# bun completions
-[ -s "/home/aururus/.bun/_bun" ] && source "/home/aururus/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-source /usr/share/nvm/init-nvm.sh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -1,10 +1,10 @@
 local function get_jdtls()
-	-- Get the Mason Registry to gain access to downloaded binaries
-	local mason_registry = require("mason-registry")
-	-- Find the JDTLS package in the Mason Regsitry
-	local jdtls = mason_registry.get_package("jdtls")
-	-- Find the full path to the directory where Mason has downloaded the JDTLS binaries
-	local jdtls_path = jdtls:get_install_path()
+	-- -- Get the Mason Registry to gain access to downloaded binaries
+	-- local mason_registry = require("mason-registry")
+	-- -- Find the JDTLS package in the Mason Regsitry
+	-- local jdtls = mason_registry.get_package("jdtls")
+	-- -- Find the full path to the directory where Mason has downloaded the JDTLS binaries
+	local jdtls_path = vim.fn.expand("$MASON/packages/jdtls")
 	-- Obtain the path to the jar which runs the language server
 	local launcher = vim.fn.glob(jdtls_path .. "/plugins/org.eclipse.equinox.launcher_*.jar")
 	-- Declare white operating system we are using, windows use win, macos use mac
@@ -17,22 +17,17 @@ local function get_jdtls()
 end
 
 local function get_bundles()
-	-- Get the Mason Registry to gain access to downloaded binaries
-	local mason_registry = require("mason-registry")
-	-- Find the Java Debug Adapter package in the Mason Registry
-	local java_debug = mason_registry.get_package("java-debug-adapter")
+	local java_debug_path = vim.fn.expand("$MASON/packages/java-debug-adapter")
 	-- Obtain the full path to the directory where Mason has downloaded the Java Debug Adapter binaries
-	local java_debug_path = java_debug:get_install_path()
-
 	local bundles = {
 		vim.fn.glob(java_debug_path .. "/extension/server/com.microsoft.java.debug.plugin-*.jar", 1),
 	}
 
-	-- Find the Java Test package in the Mason Registry
-	local java_test = mason_registry.get_package("java-test")
-	-- Obtain the full path to the directory where Mason has downloaded the Java Test binaries
-	local java_test_path = java_test:get_install_path()
-	-- Add all of the Jars for running tests in debug mode to the bundles list
+	-- -- Find the Java Test package in the Mason Registry
+	-- local java_test = mason_registry.get_package("java-test")
+	-- -- Obtain the full path to the directory where Mason has downloaded the Java Test binaries
+	local java_test_path = vim.fn.expand("$MASON/packages/java-test")
+    -- Add all of the Jars for running tests in debug mode to the bundles list
 	vim.list_extend(bundles, vim.split(vim.fn.glob(java_test_path .. "/extension/server/*.jar", 1), "\n"))
 
 	return bundles
@@ -131,7 +126,8 @@ local function setup_jdtls()
 	local bundles = get_bundles()
 
 	-- Determine the root directory of the project by looking for these specific markers
-	local root_dir = jdtls.setup.find_root({ ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" })
+	-- local root_dir = jdtls.setup.find_root({ ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" })
+	local root_dir = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" }
 
 	-- Tell our JDTLS language features it is capable of
 	local capabilities = {
@@ -314,17 +310,17 @@ local function setup_jdtls()
 	-- Create the configuration table for the start or attach function
 	local config = {
 		cmd = cmd,
-		root_dir = root_dir,
+		root_markers = root_dir,
+        filetypes = { "java" },
 		settings = settings,
 		capabilities = capabilities,
 		init_options = init_options,
 		on_attach = on_attach,
 	}
-
-	-- Start the JDTLS server
-	require("jdtls").start_or_attach(config)
+    return config
 end
 
 return {
 	setup_jdtls = setup_jdtls,
 }
+
