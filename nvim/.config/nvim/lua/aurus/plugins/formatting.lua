@@ -4,13 +4,13 @@ return {
     cmd = { "ConformInfo" },
     keys = {
         {
-          -- Customize or remove this keymap to your liking
-          "<leader>cf",
-          function()
-              require("conform").format({ async = true})
-          end,
-          mode = "n",
-          desc = "Format buffer",
+            -- Customize or remove this keymap to your liking
+            "<leader>cf",
+            function()
+                require("conform").format({ async = true })
+            end,
+            mode = "n",
+            desc = "Format buffer",
         },
     },
     -- This will provide type hinting with LuaLS
@@ -37,7 +37,7 @@ return {
         },
     },
     init = function()
-    -- If you want the formatexpr, here is the place to set it
+        -- If you want the formatexpr, here is the place to set it
         vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
     end,
 }
