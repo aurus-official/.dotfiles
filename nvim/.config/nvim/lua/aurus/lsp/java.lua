@@ -27,7 +27,7 @@ local function get_bundles()
 	-- local java_test = mason_registry.get_package("java-test")
 	-- -- Obtain the full path to the directory where Mason has downloaded the Java Test binaries
 	local java_test_path = vim.fn.expand("$MASON/packages/java-test")
-    -- Add all of the Jars for running tests in debug mode to the bundles list
+	-- Add all of the Jars for running tests in debug mode to the bundles list
 	vim.list_extend(bundles, vim.split(vim.fn.glob(java_test_path .. "/extension/server/*.jar", 1), "\n"))
 
 	return bundles
@@ -311,16 +311,15 @@ local function setup_jdtls()
 	local config = {
 		cmd = cmd,
 		root_markers = root_dir,
-        filetypes = { "java" },
+		filetypes = { "java" },
 		settings = settings,
 		capabilities = capabilities,
 		init_options = init_options,
 		on_attach = on_attach,
 	}
-    return config
+	return config
 end
 
 return {
 	setup_jdtls = setup_jdtls,
 }
-
