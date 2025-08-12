@@ -1,0 +1,8 @@
+[user]
+	name = Russel Quinto
+	email = russelquinto.official@gmaill.com
+	username = aurus.official 
+[core]
+	editor = nvim
+[init]
+    defaultBranch = main
