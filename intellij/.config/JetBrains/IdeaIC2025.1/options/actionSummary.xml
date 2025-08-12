@@ -1,0 +1,25 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="EditCustomVmOptions">
+      <i c="3" l="1754992050178" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="3" l="1754988819906" />
+    </e>
+    <e n="EditorPaste">
+      <i c="1" l="1754988810557" />
+    </e>
+    <e n="SaveAll">
+      <i c="1" l="1754988827619" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1754988766344" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="3" l="1754992054481" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.customFrameDecorations.header.toolbar.MainMenuButton$ShowMenuAction">
+      <i c="4" l="1754992044864" />
+    </e>
+  </component>
+</application>
