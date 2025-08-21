@@ -2,24 +2,57 @@
   <component name="RecentProjectsManager">
     <option name="additionalInfo">
       <map>
-        <entry key="$USER_HOME$/IdeaProjects/untitled">
+        <entry key="$USER_HOME$/Programming/ecommerce-product-scraper">
           <value>
-            <RecentProjectMetaInfo frameTitle="untitled" opened="true" projectWorkspaceId="31B5QFEfsfRNl8McpA16FfVpY46">
-              <option name="activationTimestamp" value="1754992040773" />
+            <RecentProjectMetaInfo frameTitle="ecommerce-product-scraper" projectWorkspaceId="31GFdcYO1cofWpQCg5oJHMBqdz9">
+              <option name="activationTimestamp" value="1755142628328" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="IC-251.27812.49" />
               <option name="buildTimestamp" value="1753375560000" />
               <option name="colorInfo">
-                <RecentProjectColorInfo associatedIndex="1" />
+                <RecentProjectColorInfo associatedIndex="7" />
               </option>
-              <frame x="713" y="23" width="707" height="775" extendedState="6" />
+              <frame x="11" y="20" width="1418" height="775" />
               <option name="productionCode" value="IC" />
-              <option name="projectOpenTimestamp" value="1754988775205" />
+              <option name="projectOpenTimestamp" value="1754993359769" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Programming/java-http-server">
+          <value>
+            <RecentProjectMetaInfo frameTitle="java-http-server – pom.xml" projectWorkspaceId="31GFiJNoTkj621O5fTLnxvzXcqZ">
+              <option name="activationTimestamp" value="1755229516810" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="11" y="20" width="1418" height="775" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1755142630782" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Programming/socket-programming-java">
+          <value>
+            <RecentProjectMetaInfo frameTitle="socket-programming-java – pom.xml" opened="true" projectWorkspaceId="31J5qa3oO0JZhVgCDoevF5yi2xX">
+              <option name="activationTimestamp" value="1755229548105" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="11" y="20" width="1418" height="775" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1755229527657" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastOpenedProject" value="$USER_HOME$/IdeaProjects/untitled" />
+    <option name="lastOpenedProject" value="$USER_HOME$/Programming/socket-programming-java" />
+    <option name="lastProjectLocation" value="$USER_HOME$/Programming" />
   </component>
 </application>

@@ -13,7 +13,9 @@ return {
             "clangd",
             "pyright",
             "jdtls",
-
+            "lemminx",
+            "docker_compose_language_service",
+            "dockerls",
         },
 
         automatic_enable = {
@@ -27,6 +29,9 @@ return {
             "vuels",
             "clangd",
             "pyright",
+            "lemminx",
+            "docker_compose_language_service",
+            "dockerls",
         }
     },
 }
