@@ -228,6 +228,7 @@ exec foot
 exec zen-browser
 exec "~/.dotfiles/tools/ssfsway.sh"
 exec gammastep -O 5000
+exec export XDG_CURRENT_DESKTOP=sway
 font pango:Hack Nerd Font 9
 
 input 9639:64124:Compx_2.4G_Wireless_Receiver {
@@ -241,6 +242,7 @@ input 9639:64123:Compx_2.4G_Dual_Mode_Mouse {
 }
 
 # Custom keybindings
+# output eDP-1 resolution 1440x900
 output eDP-1 scale 1.35
 # output eDP-1 mode --custom 1366x768@60Hz
 bindsym $mod+m exec wofi --conf "$HOME/.config/wofi/config/config" --style "$HOME/.config/wofi/src/mocha/style.css"

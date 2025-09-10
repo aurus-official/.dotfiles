@@ -1,0 +1,88 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "mode": "overlay",
+    "reload_style_on_change" : true,
+    "start_hidden": true,
+    // "width": 1280, // Waybar width
+    "height" : 20,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["memory", "wireplumber", "backlight", "battery", "tray"],
+    "wlr/workspaces": {
+         "disable-scroll": true,
+         "sort-by-name": true,
+         "format": " {icon} ",
+         "format-icons": {
+             "default": "",
+         },
+     },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+    "custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --format='{{ title }}'",
+        "on-click": "playerctl play-pause",
+        "max-length": 50
+    },
+    "clock": {
+        "timezone": "Asia/Singapore",
+        //"format-alt": " {:%d/%m/%Y}",
+        //"format": " {:%H:%M}",
+        "format": "  {:%Y-%m-%d %H:%M:%S}",
+        "interval":  1
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}% ⌖ ",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "states": {
+            "warning": 20,
+            "critical": 10,
+        },
+        "format": "{icon} {capacity}% ⌖ ",
+        "format-charging": "⚡ CHR {capacity}% ⌖ ",
+        "format-alt": "{icon} {capacity}% ⌖ ",
+        "format-icons": ["󰞇  BAT"],
+        "interval" : 1,
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "wireplumber": {
+        "format": "  {volume}% ⌖ ",
+        "format-muted": " 0% ⌖ ",
+    },
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
+        "format": "",
+    },
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "wlogout &",
+        "format": "襤"
+    },
+    "custom/seperator": {
+        "format" : ">ᴗ<",
+        "interval" : "once",
+        "tooltip" : false,
+    },
+    "memory" : {
+        "interval" : 1,
+        "format" :"󰍛 {percentage}% ⌖ ",
+    },
+}
