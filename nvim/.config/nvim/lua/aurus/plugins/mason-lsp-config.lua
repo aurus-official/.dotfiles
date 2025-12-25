@@ -32,6 +32,10 @@ return {
             "lemminx",
             "docker_compose_language_service",
             "dockerls",
+
+            exclude = {
+                "jdtls"
+            }
         }
     },
 }

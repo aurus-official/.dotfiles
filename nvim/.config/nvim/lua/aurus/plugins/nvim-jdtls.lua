@@ -17,7 +17,14 @@ return {
         -- We using mason-lspconfig, not using it according to readme
         local jdtls = require('jdtls')
         opts = {
-            cmd = require('lspconfig').jdtls.document_config.default_config.cmd,
+            -- cmd = require('lspconfig').jdtls.document_config.default_config.cmd,
+            cmd = vim.api.nvim_create_autocmd('LspAttach', {
+                group = vim.api.nvim_create_augroup('UserLspKeymaps', {}),
+                callback = function(event)
+                    -- Set keymaps here, e.g.,
+                    -- vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = event.buf })
+                end
+            }),
             -- See: https://github.com/mfussenegger/nvim-jdtls?tab=readme-ov-file#configuration-verbose
             root_dir = require("jdtls.setup").find_root({ ".git", "mvnw", "gradlew" }),
         }

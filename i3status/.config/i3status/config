@@ -65,7 +65,7 @@ tztime berlin {
 }
 
 tztime manila {
-        format = "   %Y-%m-%d 󰌷  󰥔  %H:%M:%S     "
+        format = "   %Y-%m-%d 󰌷  󰥔  %H:%M:%S    "
         timezone = "Asia/Manila"
 }
 

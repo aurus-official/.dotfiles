@@ -7,8 +7,8 @@
     // "width": 1280, // Waybar width
     "height" : 20,
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["memory", "wireplumber", "backlight", "battery", "tray"],
+    "modules-center": [],
+    "modules-right": ["clock", "wireplumber", "backlight", "battery", "tray"],
     "wlr/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
@@ -34,7 +34,7 @@
         "timezone": "Asia/Singapore",
         //"format-alt": " {:%d/%m/%Y}",
         //"format": " {:%H:%M}",
-        "format": "  {:%Y-%m-%d %H:%M:%S}",
+        "format": "  {:%Y-%m-%d %H:%M:%S} ⌖ ",
         "interval":  1
     },
     "backlight": {
@@ -83,6 +83,6 @@
     },
     "memory" : {
         "interval" : 1,
-        "format" :"󰍛 {percentage}% ⌖ ",
+        "format" :"󰍛 {used}G ⌖ ",
     },
 }

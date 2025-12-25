@@ -1,0 +1,61 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="12.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "GRAZIE_RULE_FILTER": "Generate Documentation",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "1",
+    "NewProjectWizard.addSampleCodeState": "true",
+    "NewProjectWizard.generateOnboardingTips": "true",
+    "NewProjectWizard.groupIdState": "org.example",
+    "NextRunPlatformUpdateBuild": "IC-252.28238.7",
+    "NextRunPlatformUpdateSelfBuild": "IC-252.23892.409",
+    "NextRunPlatformUpdateVersion": "2025.2.5",
+    "RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "SettingsSearchHistory": "Generate Documentation\nDocumentation",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "Maven",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "252.23892.409",
+    "fileTypeChangedCounter": "2",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "ide.updates.old.dirs.scan.scheduled": "1764917384551",
+    "idea.islands.enabled": "true",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "252.23892.409-IJ",
+    "jdk.selected.JAVA_MODULE": "25",
+    "last_opened_file_path": "/home/russ/Programming",
+    "llm.installer.auto.activation.executed": "true",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "llm.jupyter.promote.first.show.timestamp": "1764312699290",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "onboarding.generation.number": "1",
+    "previousColorScheme": "_@user_Dark",
+    "project.wizard.group": "NPW.simple-project.Java",
+    "registry.to.advanced.settings.migration.build": "IC-252.23892.409",
+    "terminal.gen.one.option.visible": "false"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/russ/Programming/gadget-rental",
+      "/home/russ/Programming",
+      "/home/russ/IdeaProjects/untitled"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.intellij.profiler.ultimate.hprof.impl.HprofFileTypeDetector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

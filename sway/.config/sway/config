@@ -24,6 +24,7 @@ set $term foot
 # default_border pixel 0
 # default_floating_border pixel 0
 exec swaybg -i $HOME/Wallpaper/sololeveling.png -m fill
+# exec swaybg -i $HOME/Wallpaper/ayame.png -m fill
 #
 # Example configuration:
 #
@@ -195,7 +196,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
-#
+
 # Utilities:
 
 # Special keys to adjust volume via PulseAudio
@@ -217,7 +218,7 @@ bar {
     # i3bar_command i3bar --transparency
     status_command i3status
     mode hide
-    separator_symbol "󱍿"
+    separator_symbol "󱍿 " 
 }
 
 # Custom set
@@ -228,7 +229,12 @@ exec foot
 exec zen-browser
 exec "~/.dotfiles/tools/ssfsway.sh"
 exec gammastep -O 5000
-exec export XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+#  systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+# dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=compositor_name
+exec export DISPLAY=:0
 font pango:Hack Nerd Font 9
 
 input 9639:64124:Compx_2.4G_Wireless_Receiver {
@@ -243,7 +249,7 @@ input 9639:64123:Compx_2.4G_Dual_Mode_Mouse {
 
 # Custom keybindings
 # output eDP-1 resolution 1440x900
-output eDP-1 scale 1.35
+output eDP-1 scale 1.25
 # output eDP-1 mode --custom 1366x768@60Hz
 bindsym $mod+m exec wofi --conf "$HOME/.config/wofi/config/config" --style "$HOME/.config/wofi/src/mocha/style.css"
 bindsym $mod+Shift+s exec grim -g "$(slurp)" "$HOME/Pictures/$(date).png"

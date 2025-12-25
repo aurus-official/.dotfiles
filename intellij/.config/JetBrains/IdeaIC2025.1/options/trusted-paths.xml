@@ -1,0 +1,19 @@
+<application>
+  <component name="Trusted.Paths">
+    <option name="TRUSTED_PROJECT_PATHS">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/untitled" value="true" />
+        <entry key="$USER_HOME$/Programming/ecommerce-product-scraper" value="true" />
+        <entry key="$USER_HOME$/Programming/java-http-server" value="true" />
+        <entry key="$USER_HOME$/Programming/socket-programming-java" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="Trusted.Paths.Settings">
+    <option name="TRUSTED_PATHS">
+      <list>
+        <option value="$USER_HOME$/IdeaProjects" />
+      </list>
+    </option>
+  </component>
+</application>
