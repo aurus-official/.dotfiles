@@ -5,11 +5,11 @@ vim.g.mapleader = " "
 vim.g.user_emmet_leader_key = "<C-s>"
 vim.g.python3_host_prog = "/usr/bin/python"
 
--- Telescope Bindings
-map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
-map("n", "<leader>gf", ":Telescope git_files<CR>", opts)
-map("n", "<leader>fs", ":Telescope grep_string<CR>", opts)
-map("n", "<leader>ds", ":Telescope lsp_document_symbols<CR>", opts)
+-- Fzf Lua Bindings
+map("n", "<leader>ff", ":FzfLua files<CR>", opts)
+map("n", "<leader>fa", ":FzfLua args<CR>", opts)
+map("n", "<leader>fs", ":FzfLua grep<CR>", opts)
+map("n", "<leader>ds", ":FzfLua lsp_document_symbols<CR>", opts)
 
 -- LSP Bindings
 map("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts)
