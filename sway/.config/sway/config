@@ -231,6 +231,7 @@ exec "~/.dotfiles/tools/ssfsway.sh"
 exec gammastep -O 5000
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+default_border normal 0
 
 #  systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 # dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=compositor_name

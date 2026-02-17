@@ -8,7 +8,7 @@ echo "Running $selectedde"
 if [ "$selectedde" == "sway" ]; then
     exec sway
 elif [ "$selectedde" == "hyprland" ]; then
-    exec hyprland
+    exec start-hyprland
 else 
     exec startplasma-wayland
 fi
