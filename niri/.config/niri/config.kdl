@@ -36,7 +36,7 @@ input {
         // dwtp
         // drag false
         // drag-lock
-        natural-scroll
+        // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "two-finger"
@@ -46,8 +46,8 @@ input {
     mouse {
         // off
         // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
+        accel-speed 0.6
+        accel-profile "flat"
         // scroll-method "no-scroll"
     }
 
@@ -666,4 +666,6 @@ binds {
     Mod+Shift+P { power-off-monitors; }
 }
 
-
+cursor {
+    hide-when-typing
+}
