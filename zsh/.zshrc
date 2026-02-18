@@ -70,10 +70,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
 
 ZLE_RPROMPT_INDENT=0
 # User configuration
@@ -96,7 +95,7 @@ ZLE_RPROMPT_INDENT=0
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
-# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
@@ -104,10 +103,17 @@ ZLE_RPROMPT_INDENT=0
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# alias javawayland="/home/russel/.jdk/build/linux-x86_64-server-release/images/jdk/bin/java"
-# alias javacwayland="/home/russel/.jdk/build/linux-x86_64-server-release/images/jdk/bin/java"
+alias miclightoff="echo 0 | sudo tee /sys/class/leds/platform\:\:micmute/brightness"
+alias miclighton="echo 1 | sudo tee /sys/class/leds/platform\:\:micmute/brightness"
+alias taiga="cd ~/.taiga-docker && sudo ./launch-taiga.sh"
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+export DISPLAY=:0
+export MOZ_ENABLE_WAYLAND=1
+source /usr/share/nvm/init-nvm.sh
+export QT_QPA_PLATFORM="wayland;xcb"
 
+# Force Java to use the native Wayland toolkit
+export AWT_TOOLKIT=WToolkit
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS="-Dawt.toolkit.name=WLToolkit"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
