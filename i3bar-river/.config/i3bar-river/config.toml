@@ -1,5 +1,5 @@
 # In ~/.config/i3bar-river/config.toml
 command = "i3status" # or "i3status-rs"
 position = "top"
-font = "JetBrainsMono Nerd Font 9"
+font = "Firacode Nerd Font 9"
 height = 18
