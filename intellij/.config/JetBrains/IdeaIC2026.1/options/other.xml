@@ -1,0 +1,87 @@
+<application>
+  <component name="FileEditorProviderManager">{}</component>
+  <component name="LangManager">
+    <option name="languageName" value="JAVA" />
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="12.0" />
+    <option name="presentationModeIdeScale" value="1.75" />
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "GRAZIE_RULE_FILTER": "Generate Documentation",
+    "InstalledPluginsSearchHistory": "fuzzi\nfuzz\nfuz\nfu\nf",
+    "KEYMAP": "lookup\nredo\ndelete",
+    "LAST_CALCULATED_COLOR_INDEX_KEY": "4",
+    "MarketplacePluginsSearchHistory": "drool\ndr\ndocker\nide\nidea",
+    "NewProjectWizard.addSampleCodeState": "true",
+    "NewProjectWizard.generateOnboardingTips": "true",
+    "NewProjectWizard.groupIdState": "org.example",
+    "RunOnceActivity.TerminalOptionsProvider.TerminalEngineMigration.2026.1": "true",
+    "RunOnceActivity.TerminalOptionsProvider.migration.2025.1.1": "true",
+    "RunOnceActivity.VFSInitializationConditionsToFusReporter": "true",
+    "RunOnceActivity.git.modal.commit.deprecation.notification": "true",
+    "RunOnceActivity.git.modal.commit.toggle": "true",
+    "RunOnceActivity.reset.auto.reparse.settings.to.default": "true",
+    "SettingsSearchHistory": "smooth\ncaret\nGenerate Documentation\nDocumentation",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "com.intellij.ide.projectWizard.generators.JavaNewProjectWizard$Step.selectedStep": "Maven",
+    "defaultJdkConfigured": "true",
+    "docker.connection.created": "true",
+    "enter_selection_count": "4",
+    "experimental.ui.on.first.startup": "true",
+    "experimental.ui.used.version": "261.22158.277",
+    "fileTypeChangedCounter": "7",
+    "fontSizeToResetConsole": "13.0",
+    "fontSizeToResetEditor": "13.0",
+    "git.working.trees.number.of.projects.with.git": "2",
+    "got.it.tooltip.Plugins Auto-Update": "1",
+    "ide.islands.ab3": "true",
+    "ide.islands.new.darcula": "true",
+    "ide.updates.old.dirs.scan.scheduled": "1776686491195",
+    "idea.islands.enabled": "true",
+    "ift.hide.welcome.screen.promo": "true",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "261.22158.277-IJ",
+    "jdk.selected.JAVA_MODULE": "25",
+    "last_opened_file_path": "/home/russ/Programming/hybrid-recommendation-system/backend",
+    "llm.installer.auto.activation.executed": "true",
+    "llm.installer.last.toolwindow.state": "LLM_INSTALLER",
+    "llm.jupyter.promote.first.show.timestamp": "1764312699290",
+    "migrated.non.roamable.values.from.general.settings": "true",
+    "onboarding.generation.number": "1",
+    "previousColorScheme": "_@user_Dark",
+    "project.wizard.group": "promo-spring",
+    "registry.to.advanced.settings.migration.build": "IC-261.22158.277",
+    "terminal.gen.one.option.visible": "false"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/russ/Programming/hybrid-recommendation-system/backend",
+      "/home/russ/Programming/jeepney-clash/backend",
+      "/home/russ/Programming/gadget-rental/backend",
+      "/home/russ/Programming/gadget-rental",
+      "/home/russ/Programming",
+      "/home/russ/IdeaProjects/untitled"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+  <component name="ReworkedTerminalUsage">{
+  &quot;firstIdeSessionMoment&quot;: {
+    &quot;type&quot;: &quot;org.jetbrains.plugins.terminal.TerminalFirstIdeSessionMoment.BeforeTrackingStarted&quot;
+  }
+}</component>
+  <component name="com.fuzzyfilesearch.settings.GlobalSettings">
+    <option name="common">
+      <CommonSettings>
+        <option name="fontSize" value="13" />
+        <option name="selectedColor" value="#2E436EFF" />
+      </CommonSettings>
+    </option>
+  </component>
+</application>

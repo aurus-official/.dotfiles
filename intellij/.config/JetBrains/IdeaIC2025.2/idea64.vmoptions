@@ -2,3 +2,4 @@
 
 
  -Dawt.toolkit.name=WLToolkit
+ -Xmx4096m

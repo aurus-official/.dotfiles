@@ -1,0 +1,90 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Programming/ecommerce-product-scraper">
+          <value>
+            <RecentProjectMetaInfo frameTitle="ecommerce-product-scraper" projectWorkspaceId="31GFdcYO1cofWpQCg5oJHMBqdz9">
+              <option name="activationTimestamp" value="1755142628328" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="7" />
+              </option>
+              <frame x="11" y="20" width="1418" height="775" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1754993359769" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Programming/java-http-server">
+          <value>
+            <RecentProjectMetaInfo frameTitle="java-http-server – pom.xml" projectWorkspaceId="31GFiJNoTkj621O5fTLnxvzXcqZ">
+              <option name="activationTimestamp" value="1755229516810" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="8" />
+              </option>
+              <frame x="11" y="20" width="1418" height="775" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1755142630782" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Programming/socket-programming-java">
+          <value>
+            <RecentProjectMetaInfo frameTitle="socket-programming-java" projectWorkspaceId="31J5qa3oO0JZhVgCDoevF5yi2xX">
+              <option name="activationTimestamp" value="1764312652943" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-251.27812.49" />
+              <option name="buildTimestamp" value="1753375560000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="0" />
+              </option>
+              <frame x="11" y="20" width="1532" height="839" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1755229527657" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Programming/gadget-rental/backend">
+          <value>
+            <RecentProjectMetaInfo frameTitle="backend – BookingService.java" projectWorkspaceId="3AORpd5RbdHWPPh9xbdA20k07NM">
+              <option name="activationTimestamp" value="1773983149316" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-253.30387.20" />
+              <option name="buildTimestamp" value="1769343660000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="2" />
+              </option>
+              <frame x="68" y="20" width="1534" height="844" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1772461814212" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Programming/jeepney-clash/backend">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="3BFeeT4iyQw5y3TFyDlTREbaiTT">
+              <option name="activationTimestamp" value="1774089537948" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-253.31033.145" />
+              <option name="buildTimestamp" value="1771830960000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="3" />
+              </option>
+              <frame x="68" y="20" width="766" height="844" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1774089341856" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/Programming/jeepney-clash/backend" />
+    <option name="lastProjectLocation" value="$USER_HOME$/Programming/jeepney-clash" />
+  </component>
+</application>

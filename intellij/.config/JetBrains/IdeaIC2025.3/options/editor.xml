@@ -1,0 +1,7 @@
+<application>
+  <component name="EditorSettings">
+    <option name="IS_CARET_BLINKING" value="false" />
+    <option name="LINE_NUMERATION" value="RELATIVE" />
+    <option name="IS_BLOCK_CURSOR" value="true" />
+  </component>
+</application>

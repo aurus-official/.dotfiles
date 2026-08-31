@@ -1,0 +1,209 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-cmd>
+        <entry encoding="base64">c291cmNlIH4vaWRlYXZpbXJj</entry>
+        <entry encoding="base64" />
+        <entry encoding="base64">cQ==</entry>
+        <entry encoding="base64">JzwsJz5zL25ub3JlbWFwL25tYXA=</entry>
+        <entry encoding="base64">c291cmNlIH4vLmlkZWF2aW1yYw==</entry>
+        <entry encoding="base64">d3E=</entry>
+        <entry encoding="base64">cSE=</entry>
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+      <history-search>
+        <entry encoding="base64">bg==</entry>
+        <entry encoding="base64">bm5vcmVtYXA=</entry>
+      </history-search>
+    </history>
+  </component>
+  <component name="VimJumpsSettings">
+    <project id="gadget-rental-4befbc64">
+      <jump line="32" column="38" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="44" column="51" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="0" column="33" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="42" column="46" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+    </project>
+    <project id="backend-16d45be9">
+      <jump line="8" column="14" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingByMonthAndProductRequestDTO.java" protocol="file" />
+      <jump line="16" column="13" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingModel.java" protocol="file" />
+      <jump line="12" column="17" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingRepository.java" protocol="file" />
+      <jump line="24" column="0" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingRepository.java" protocol="file" />
+      <jump line="17" column="13" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="6" column="14" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingByMonthAndProductResponseDTO.java" protocol="file" />
+      <jump line="45" column="0" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="44" column="51" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="43" column="0" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="42" column="51" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="0" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="10" column="11" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="31" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="25" column="1" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="18" column="13" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="20" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="22" column="27" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="24" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="48" column="51" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="36" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="1" column="0" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="47" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="53" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="50" column="12" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="33" column="0" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="32" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="56" column="34" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="52" column="26" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="19" column="9" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="46" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="36" column="0" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="59" column="14" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="34" column="0" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="26" column="20" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="40" column="0" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="27" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="35" column="39" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="20" column="36" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="153" column="17" filename="/usr/lib/jvm/default/lib/src.zip!/java.base/java/util/List.java" protocol="jar" />
+      <jump line="37" column="32" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="27" column="4" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="29" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="58" column="0" filename="$USER_HOME$/.ideavimrc" protocol="file" />
+      <jump line="22" column="12" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="23" column="14" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="19" column="19" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" protocol="file" />
+      <jump line="23" column="17" filename="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingRepository.java" protocol="file" />
+    </project>
+    <project id="backend-df708840">
+      <jump line="8" column="13" filename="$USER_HOME$/Programming/jeepney-clash/backend/src/main/java/com/aurus/jeepneyclash/game_server/GameServerApplication.java" protocol="file" />
+      <jump line="13" column="22" filename="$USER_HOME$/Programming/jeepney-clash/backend/src/main/java/com/aurus/jeepneyclash/game_server/GameServerApplication.java" protocol="file" />
+      <jump line="14" column="52" filename="$USER_HOME$/Programming/jeepney-clash/backend/src/main/java/com/aurus/jeepneyclash/game_server/GameServerApplication.java" protocol="file" />
+      <jump line="25" column="0" filename="$USER_HOME$/Programming/jeepney-clash/backend/src/main/java/com/aurus/jeepneyclash/game_server/config/security/ApplicationRunnerDatabaseConfig.java" protocol="file" />
+      <jump line="11" column="0" filename="$USER_HOME$/Programming/jeepney-clash/backend/src/main/java/com/aurus/jeepneyclash/game_server/GameServerApplication.java" protocol="file" />
+      <jump line="28" column="46" filename="$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/7.0.4/spring-security-crypto-7.0.4.jar!/org/springframework/security/crypto/bcrypt/BCrypt.class" protocol="jar" />
+    </project>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <localmarks>
+      <file name="/Dummy.txt" timestamp="1773976399520">
+        <mark key="&quot;" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/shared/ErrorMessageBodyUtil.java" timestamp="1773976405480">
+        <mark key="&quot;" line="20" column="0" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/.idea/Harpooner Menu" timestamp="1773976407320">
+        <mark key="&quot;" line="0" column="59" />
+        <mark key="[" line="0" column="0" />
+        <mark key="]" line="0" column="0" />
+        <mark key="^" line="0" column="0" />
+        <mark key="." line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/shared/AccountTypeConverter.java" timestamp="1773976406024">
+        <mark key="&quot;" line="17" column="0" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingRepository.java" timestamp="1774089278953">
+        <mark key="&quot;" line="23" column="17" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingModel.java" timestamp="1774089278945">
+        <mark key="&quot;" line="16" column="13" />
+      </file>
+      <file name="$USER_HOME$/.ideavimrc" timestamp="1773979088325">
+        <mark key="&quot;" line="8" column="0" />
+        <mark key="'" line="59" column="0" />
+        <mark key="[" line="14" column="0" />
+        <mark key="]" line="14" column="0" />
+        <mark key="." line="14" column="0" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingByMonthAndProductResponseDTO.java" timestamp="1774089278975">
+        <mark key="&quot;" line="6" column="14" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingService.java" timestamp="1774089278962">
+        <mark key="&quot;" line="20" column="19" />
+        <mark key="'" line="22" column="12" />
+        <mark key="[" line="27" column="0" />
+        <mark key="]" line="27" column="0" />
+        <mark key="." line="27" column="0" />
+      </file>
+      <file name="/usr/lib/jvm/default/lib/src.zip!/java.base/java/util/List.java" timestamp="1773979092879">
+        <mark key="&quot;" line="141" column="0" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/auth/verification/EmailVerificationRequestDTO.java" timestamp="1773976412232">
+        <mark key="&quot;" line="10" column="0" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingByMonthAndProductRequestDTO.java" timestamp="1774089278928">
+        <mark key="&quot;" line="8" column="14" />
+      </file>
+      <file name="$USER_HOME$/Programming/gadget-rental/backend/src/main/java/com/gadget/rental/booking/BookingByRequestReferenceDTO.java" timestamp="1773976294954">
+        <mark key="&quot;" line="7" column="0" />
+      </file>
+      <file name="$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/7.0.4/spring-security-crypto-7.0.4.jar!/org/springframework/security/crypto/bcrypt/BCrypt.class" timestamp="1774089481273">
+        <mark key="&quot;" line="28" column="46" />
+      </file>
+    </localmarks>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="LINE_WISE">
+        <text encoding="base64">c2V0IGhpZ2hsaWdodGVkeWFuawo=</text>
+      </register>
+      <register name="*" type="LINE_WISE">
+        <text encoding="base64">c2V0IGhpZ2hsaWdodGVkeWFuawo=</text>
+      </register>
+      <register name="-" type="CHARACTER_WISE">
+        <text encoding="base64">bm9yZW1hcA==</text>
+      </register>
+      <register name="." type="CHARACTER_WISE">
+        <text encoding="base64">c2V0IE5FUkRUcmVlCnNldCBoaWdobGlnaHRlZHlhbmtq</text>
+      </register>
+      <register name="/" type="CHARACTER_WISE">
+        <text encoding="base64">bm5vcmVtYXA=</text>
+      </register>
+      <register name="0" type="LINE_WISE">
+        <text encoding="base64">c2V0aGFuZGxlciA8Yy1pPiBuLXYtaTp2aW0Kc2V0aGFuZGxlciA8Yy1vPiBuLXYtaTp2aW0Kc2V0aGFuZGxlciA8Yy1kPiBuLXYtaTp2aW0Kc2V0aGFuZGxlciA8Yy11PiBuLXYtaTp2aW0Kc2V0aGFuZGxlciA8Yy1oPiBuLXYtaTp2aW0Kc2V0aGFuZGxlciA8Yy1qPiBuLXYtaTp2aW0Kc2V0aGFuZGxlciA8Yy1rPiBuLXYtaTp2aW0Kc2V0aGFuZGxlciA8Yy1sPiBuLXYtaTp2aW0Kc2V0aGFuZGxlciA8Yy1hLWQ+IG4tdi1pOnZpbQpzZXRoYW5kbGVyIDxjLXI+IG4tdi1pOnZpbQpzZXRoYW5kbGVyIDxjLXk+IG4tdi1pOnZpbQo=</text>
+      </register>
+      <register name="1" type="LINE_WISE">
+        <text encoding="base64">c2V0IGhpZ2hsaWdodGVkeWFuawo=</text>
+      </register>
+      <register name="2" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="3" type="LINE_WISE">
+        <text encoding="base64">ICAgIAo=</text>
+      </register>
+      <register name="4" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="5" type="LINE_WISE">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="6" type="LINE_WISE">
+        <text encoding="base64">aW5vcmVtYXAgPEMteT4gOmFjdGlvbiBFZGl0b3JDaG9vc2VMb29rdXBJdGVtPENSPgo=</text>
+      </register>
+      <register name="7" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBib28K</text>
+      </register>
+      <register name="8" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBib29raW5nQnlNb250aEFuZFByb2R1Y3RSZXF1ZXN0RFRPLm1vbnRoKCkK</text>
+      </register>
+      <register name="9" type="LINE_WISE">
+        <text encoding="base64">ICAgICAgICBibwo=</text>
+      </register>
+      <register name=":" type="CHARACTER_WISE">
+        <text encoding="base64">dw==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-substitute encoding="base64">bm5vcmVtYXA=</last-substitute>
+      <last-offset encoding="base64" />
+      <last-replace encoding="base64">bm1hcA==</last-replace>
+      <last-pattern encoding="base64">bm5vcmVtYXA=</last-pattern>
+      <last-dir encoding="base64">MQ==</last-dir>
+      <show-last encoding="base64">ZmFsc2U=</show-last>
+    </search>
+  </component>
+  <component name="VimVariables">
+    <vim-variables />
+  </component>
+</application>

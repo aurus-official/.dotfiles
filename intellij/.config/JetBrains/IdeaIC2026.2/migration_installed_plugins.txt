@@ -1,0 +1,7 @@
+com.mituuz.fuzzier
+IdeaVIM
+com.github.erotourtes.harpoon
+Docker
+hg4idea
+Subversion
+PerforceDirectPlugin

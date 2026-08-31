@@ -108,12 +108,21 @@ alias miclighton="echo 1 | sudo tee /sys/class/leds/platform\:\:micmute/brightne
 alias taiga="cd ~/.taiga-docker && sudo ./launch-taiga.sh"
 export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export DISPLAY=:0
+export XDG_CURRENT_DESKTOP=niri
 export MOZ_ENABLE_WAYLAND=1
+export XDG_SESSION_TYPE=wayland
 source /usr/share/nvm/init-nvm.sh
 export QT_QPA_PLATFORM="wayland;xcb"
 
 # Force Java to use the native Wayland toolkit
 export AWT_TOOLKIT=WToolkit
 export _JAVA_AWT_WM_NONREPARENTING=1
-export _JAVA_OPTIONS="-Dawt.toolkit.name=WLToolkit"
+export _JAVA_OPTIONS="-Dawt.toolkit.name=WLToolkit -Xmx4096m"
+export GTK_THEME=Adwaita:dark
+export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+export QT_STYLE_OVERRIDE=Adwaita-Dark
 
+# Setup React Native
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
