@@ -29,7 +29,7 @@ local function get_bundles()
 	local java_test_path = vim.fn.expand("$MASON/packages/java-test")
 	-- Add all of the Jars for running tests in debug mode to the bundles list
 	vim.list_extend(bundles, vim.split(vim.fn.glob(java_test_path .. "/extension/server/*.jar", 1), "\n"))
-	vim.list_extend(bundles, require("spring_boot").java_extensions())
+	-- vim.list_extend(bundles, require("spring_boot").java_extensions())
 
 	return bundles
 end
@@ -128,8 +128,23 @@ local function setup_jdtls()
 
 	-- Determine the root directory of the project by looking for these specific markers
 	-- local root_dir = jdtls.setup.find_root({ ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" })
-	local root_dir = { ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" }
 	-- local root_dir = vim.fs.dirname(vim.fs.find({ 'gradlew', '.git', 'mvnw', "pom.xml" }, { upward = true })[1])
+
+	local root_markers = {
+		".git",
+		"mvnw",
+		"gradlew",
+		"pom.xml",
+		"build.gradle",
+	}
+
+	local root_dir = function(bufnr, on_dir)
+		local fname = vim.api.nvim_buf_get_name(bufnr)
+
+		local root = vim.fs.root(fname, root_markers) or vim.fs.dirname(fname)
+
+		on_dir(root)
+	end
 
 	-- Tell our JDTLS language features it is capable of
 	local capabilities = {
@@ -162,7 +177,7 @@ local function setup_jdtls()
 		"-Declipse.product=org.eclipse.jdt.ls.core.product",
 		"-Dlog.protocol=true",
 		"-Dlog.level=ALL",
-		"-Xmx1G",
+		"-Xmx4G",
 		"--add-modules=ALL-SYSTEM",
 		"--add-opens",
 		"java.base/java.util=ALL-UNNAMED",
@@ -312,7 +327,7 @@ local function setup_jdtls()
 	-- Create the configuration table for the start or attach function
 	local config = {
 		cmd = cmd,
-		root_markers = root_dir,
+		root_dir = root_dir,
 		filetypes = { "java" },
 		settings = settings,
 		capabilities = capabilities,

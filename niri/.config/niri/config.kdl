@@ -30,17 +30,20 @@ input {
     // Omitting settings disables them, or leaves them at their default values.
     // All commented-out settings here are examples, not defaults.
     touchpad {
-        // off
-        // tap
-        // dwt
-        // dwtp
-        // drag false
-        // drag-lock
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
+        // 1. Enable tap-to-click if you want it reactive
+        tap
+
+        // 2. Adjust Pointer Speed (Default is 0.0, valid range is -1.0 to 1.0)
+        accel-speed 0.4
+
+        // 3. Acceleration Profile: "adaptive" or "flat"
+        // "flat" maps movements 1:1 with your finger speed to eliminate dragging lag
+        accel-profile "flat"
+
+        // 4. Increase scrolling sensitivity if pages feel heavy
+        // Higher than 1.0 makes 2-finger scrolling faster
+        scroll-factor 1.3
+	dwt
     }
 
     mouse {
@@ -271,7 +274,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "i3bar-river"
 spawn-at-startup "foot"
-spawn-at-startup "zen-browser"
+spawn-at-startup "brave-origin"
 spawn-sh-at-startup "swaybg -o eDP-1 -i ~/Wallpaper/sololeveling.png"
 spawn-sh-at-startup "swaybg -o eDP-1 -i ~/Wallpaper/sololeveling.png"
 spawn-sh-at-startup "swayidle -w timeout 601 niri msg action power-off-monitors timeout 600 swaylock -f before-sleep swaylock -f"
@@ -332,38 +335,29 @@ window-rule {
     default-column-width {}
 }
 
-workspace "foot" {
+workspace "term" {
 }
-workspace "zen" {
+workspace "brwr" {
 }
 
 
 // Open the Zen picture-in-picture player as floating by default.
 window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"zen$"# title="^Picture-in-Picture$"
+    match app-id=r#"brave-origin$"# title="^Picture-in-Picture$"
     open-floating true
 }
 
-
 window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id="foot"
+    match app-id="brave-origin"
+    draw-border-with-background false 
     open-maximized true
-    open-on-workspace "foot"
+    open-on-workspace "brwr"
 }
 
 window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id="zen"
+    match app-id="foot"
     open-maximized true
-    open-on-workspace "zen"
+    open-on-workspace "term"
 }
 
 window-rule {
@@ -671,4 +665,14 @@ binds {
 
 cursor {
     hide-when-typing
+    xcursor-theme "breeze_cursors"
+    xcursor-size 20
+}
+
+environment {
+    QT_QPA_PLATFORM "wayland;xcb"
+    QT_QPA_PLATFORMTHEME "qt5ct"
+    GTK_THEME "Adwaita:dark"
+    GTK2_RC_FILES "/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
+    QT_STYLE_OVERRIDE "Adwaita-Dark"
 }
