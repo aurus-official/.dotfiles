@@ -120,6 +120,7 @@ export MOZ_ENABLE_WAYLAND=1
 export XDG_SESSION_TYPE=wayland
 source /usr/share/nvm/init-nvm.sh
 export QT_QPA_PLATFORM="wayland;xcb"
+export TZ="/usr/share/zoneinfo/Asia/Manila"
 
 # Force Java to use the native Wayland toolkit
 export AWT_TOOLKIT=WToolkit
